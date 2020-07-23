@@ -1,0 +1,187 @@
+body {
+	background-color: rgb(53, 53, 53);
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.font {
+	font-family: "Major Mono Display", monospace;
+}
+
+.timeFont {
+	font-family: "Major Mono Display", monospace;
+}
+
+.inputContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60vw;
+	height: 25%;
+	border: 3px solid rgb(255, 0, 0);
+	border-radius: 5px;
+	margin-top: 75px;
+	padding: 20px;
+	overflow: hidden;
+	background: repeating-linear-gradient(
+		135deg,
+		rgba(255, 0, 0, 0.1),
+		rgba(255, 0, 0, 0) 10px
+	);
+}
+
+.dateInputContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+	width: 100%;
+	height: 40%;
+}
+
+#dateInput {
+	padding: 3px;
+	width: 300px;
+	outline: none;
+	margin-right: 15px;
+}
+
+#hourInput {
+	width: 150px;
+	padding: 3px;
+	outline: none;
+}
+
+input[type="text"] {
+	font-size: 250%;
+	color: white;
+	background: none;
+	border: 1px solid red;
+}
+
+input[type="text"]::placeholder {
+	text-align: center;
+	color: rgb(117, 117, 117);
+}
+
+#submitDate {
+	width: 70%;
+	height: 30%;
+	min-height: 30px;
+	color: white;
+	font-size: 250%;
+	outline: none;
+	background: none;
+	border: 1px solid white;
+	padding: 3px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+#submitDate:hover {
+	cursor: pointer;
+	border: 2px solid;
+	padding: 2px;
+}
+
+.counterContainer {
+	margin-top: 10vh;
+	width: 80vw;
+	min-height: 30vh;
+	border: 3px solid rgb(127, 240, 35);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: repeating-linear-gradient(
+		135deg,
+		rgb(127, 240, 35, 0.1),
+		rgba(127, 240, 35, 0) 50px
+	);
+}
+
+.counterValue {
+	color: rgb(127, 240, 35);
+	font-size: 600%;
+	margin: 30px;
+}
+
+.counterText {
+	color: rgb(127, 240, 35);
+	font-size: 250%;
+	margin: 30px;
+}
+
+.secondaryOptions {
+	height: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.radioButtons {
+	color: white;
+	font-size: 150%;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+input[type="radio"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* create custom radiobutton appearance */
+	min-width: 5px;
+	height: 20px;
+	margin-right: 5px;
+	/* background-color only for content */
+	background-color: white;
+	border-radius: 1px;
+	outline: none;
+}
+
+input[type="radio"]:checked {
+	background-color: #ff0000;
+	outline: none;
+}
+
+#displayAllContainer {
+	font-size: 480%;
+	display: flex;
+	flex-direction: row;
+}
+
+.displayAllUnits {
+	font-size: 120%;
+	color: rgb(127, 240, 35);
+	display: flex;
+	justify-content: center;
+	padding-top: 12px;
+	border-top: 1px solid rgb(127, 240, 35);
+}
+
+.displayUnit {
+	display: flex;
+	margin: 10px 40px 0px 40px;
+}
+
+.finePrint {
+	color: rgb(170, 170, 170);
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: flex-end;
+	z-index: -1;
+}
+.finePrintText {
+	margin-bottom: 10px;
+}
